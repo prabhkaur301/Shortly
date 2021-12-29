@@ -1,22 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  Features
+<body>
+  <div class="hero">
+    <header class="flex ml header h-flex mr mt">
+      <div class="left h-flex">
+        <img src="./images/logo.svg" alt="Logo of the site" class="logo">
+        <nav aria-label="Site Links" class="main-nav">
+          <ul class="h-flex ml-2">
+            <li><a href="#" class="mr-2">Features</a></li>
+            <li><a href="#" class="mr-2">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right">
+        <a href="#" class="sec-btn mr-2">Login</a>
+        <button class="btn">Sign Up</button>
+      </div>
+    </header>
+
+    <!-- main hero section -->
+    <main>
+      <section class="hero h-flex ml mt-3">
+        <div class="left">
+          <div class="text mb-sm">
+            <h1 class="main-heading ">More than just shorter links</h1>
+            <p>Build your brand’s recognition and get detailed insights
+              on how your links are performing.</p>
+          </div>
+          <button class="btn "> Get Started</button>
+        </div>
+        <div class="right">
+          <img src="./images/illustration-working.svg" alt="Girl working on PC Illustration" class="hero-img">
+        </div>
+      </section>
+
+      <div class="shortenlink ml mr">
+        <input type="text" name="shortlink" id="shortLink" placeholder="Shorten a link here ...">
+        <button class="btn shorten">Shorten it!</button>
+      </div>
+      <div class="bg">
+        <section class="sec-2">
+
+          <div class="txt mb mt-3">
+            <h2>Advanced Statistics</h2>
+            <p>Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
+          </div>
+          <div class="stats mt-3 mb h-flex mr ml">
+            <div class="card card-1">
+              <div class="icon">
+                <img src="./images/icon-brand-recognition.svg">
+              </div>
+              <h3>
+                Brand Recognition
+              </h3>
+              <p>Boost your brand recognition with each click. Generic links don’t
+                mean a thing. Branded links help instil confidence in your content.
+              </p>
+            </div>
+
+            <div class="card card-2">
+              <div class="icon">
+                <img src="./images/icon-detailed-records.svg">
+              </div>
+              <h3>
+                Detailed Records
+              </h3>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and where
+                people engage with your content helps inform better decisions.
+              </p>
+            </div>
+
+            <div class="card card-3">
+              <div class="icon">
+                <img src="./images/icon-fully-customizable.svg">
+              </div>
+              <h3>
+                Fully Customizable
+              </h3>
+              <p>
+                Improve brand awareness and content discoverability through customizable
+                links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- section-3 , Boost your links today -->
+
+        <section class="boost sec-3">
+          <h2>Boost your links today</h2>
+          <button class="btn mt">Get Started</button>
+        </section>
+
+
+      </div>
+    </main>
+
+    <footer>
+      <div class="ft-container e-flex mr ml">
+      <div class="logo">
+        <a href="#"  ><img src="./images/logo.svg" alt="Logo of the Site" class="white"></a>
+      </div>
+      <div class="links ">
+        
+        <nav aria-label="Related Links " class="e-flex">
+          
+          <ul>
+            <h4>Features</h4>
+            <li><a href="#"  class="cl-cyan">Link Shortening</a></li>
+            <li><a href="#" class="cl-cyan">Branded Links</a></li>
+            <li><a href="#" class="cl-cyan">Analytics </a></li>
+          </ul>
+         
+          <ul>
+            <h4>Resources</h4>
+            <li><a href="#" class="cl-cyan">Blog</a></li>
+            <li><a href="#" class="cl-cyan">Developers</a></li>
+            <li><a href="#" class="cl-cyan">Support</a></li>
+          </ul>
+        
+          <ul>
+            <h4>Company</h4>
+            <li><a href="#" class="cl-cyan">About</a></li>
+            <li><a href="#" class="cl-cyan">Our Team</a></li>
+            <li><a href="#" class="cl-cyan">Careers</a></li>
+            <li><a href="#" class="cl-cyan">Contact</a></li>
+          </ul>
+          <ul class="icons h-flex" >
+            <li><a href=""><img src="./images/icon-facebook.svg" alt=""  class="cl-white social-icons"></a></li>
+            <li><a href=""><img src="./images/icon-twitter.svg" alt="" class="cl-white social-icons"></a></li>
+            <li><a href=""><img src="./images/icon-pinterest.svg" alt="" class="cl-white social-icons"></a></li>
+            <li><a href=""><img src="./images/icon-instagram.svg" alt="" class="cl-white social-icons"></a></li>
+          </ul>
+
+          
+        </nav>
+      </div>
+    </div>
+    </footer>
+
+    <!-- Features
   Pricing
   Resources
 
@@ -75,11 +228,12 @@
   About
   Our Team
   Careers
-  Contact
-  
-  <div class="attribution">
+  Contact  -->
+
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Your Name Here</a>. -->
   </div>
 </body>
+
 </html>

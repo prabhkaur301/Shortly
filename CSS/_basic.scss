@@ -49,7 +49,12 @@ body{
         cursor: pointer;
         &:hover{
             background-color: #9be3e2;
+            border: 1px solid $heading;
+           
         }
+       &:focus{
+        transform: scale(0.9);
+       }
     }
     .cl-grey{
         color: $grey;

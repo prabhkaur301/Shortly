@@ -14,7 +14,7 @@
   html {
     font-size: 14px;
   }
-  
+
   header {
     & .site-logo {
       width: 25%;
@@ -75,11 +75,10 @@
   }
 
   .active-cover {
-      visibility: visible;
-    
+    visibility: visible;
   }
   .hamburger {
-      z-index: 500;
+    z-index: 500;
     cursor: pointer;
     position: absolute;
     right: 6%;
@@ -109,55 +108,54 @@
     font-size: 3rem;
   }
 
-   
-  .section.hero{
-      & .right{
-          img{
-              width: 100%;
-              margin-right: 0;
-          }
+  .section.hero {
+    & .right {
+      img {
+        width: 100%;
+        margin-right: 0;
       }
+    }
   }
 
-  .sec-2 .card .line{
-      visibility: hidden;
+  .sec-2 .card .line {
+    visibility: hidden;
   }
 
-.shortenlink {
-    flex-direction: column; 
+  .shortenlink {
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-   
-    & input{
-        height: 30%;
-        width: 100%;
-        
+
+    & input {
+      height: 30%;
+      width: 100%;
     }
-    & .redtxt{
-        top: 60px !important;
+    & .redtxt {
+      top: 60px !important;
     }
-    & button.btn.shorten{
-       
-        height: 30%;
-        width: 100%;
+    & button.btn.shorten {
+      height: 30%;
+      width: 100%;
     }
-    
   }
 }
 @media screen and (max-width: 450px) {
   html {
     font-size: 12px;
   }
-h1,h2,h3,h4{
+  h1,
+  h2,
+  h3,
+  h4 {
     text-align: center;
-}
+  }
   p {
     font-size: 16px;
   }
   header .site-logo {
     width: 40%;
   }
-  
+
   section.hero {
     flex-direction: column-reverse;
     flex-wrap: wrap;
@@ -181,20 +179,18 @@ h1,h2,h3,h4{
       }
     }
 
-    & .right{
-        width: 90%;
+    & .right {
+      width: 90%;
     }
   }
 
-   
-
-  .sec-2 {
-    
+  section.sec-2 {
     margin: 4rem 0;
 
-  
+    & .txt {
+      width: 80%;
+    }
 
-   
     .stats {
       width: 90%;
 
@@ -202,19 +198,12 @@ h1,h2,h3,h4{
       justify-content: center;
       align-items: center;
       margin: 4rem 2rem;
-
-      & .txt {
-        margin-top: 4rem;
-        width: 90% !important;
-      }
     }
   }
-  
 
-
-footer {
-  ul {
-    margin-bottom: 2rem;
+  footer {
+    ul {
+      margin-bottom: 2rem;
+    }
   }
-}
 }

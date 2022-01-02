@@ -158,25 +158,36 @@ section.hero {
 
 .shorted-links{
   position: relative;
-  width: 80%;
-  padding: 1rem 3rem;
-  border-radius: 10px;
-  margin: 2rem auto;
+  height: auto;
+  margin: 1rem auto;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: space-between;
+  
 
   & .short-block{
     background-color: white;
+    margin: 0.5rem auto;
     height: 100px;
-  }
-
-  & .link{
     width: 80%;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  & .query{
+    max-width: 50%;
+  }
+  & .link{
+    color: $cyan;
+    text-decoration: underline;
 
   }
+  
   & .copy{
-    width:5rem ;
+    width:6rem ;
   }
 }
 .bg {

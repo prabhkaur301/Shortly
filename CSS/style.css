@@ -559,12 +559,30 @@ section.hero .right img {
 
 .shorted-links {
   position: relative;
-  width: 80%;
-  height: 100px;
+  height: auto;
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shorted-links .short-block {
   background-color: white;
+  margin: 0.5rem auto;
+  height: 100px;
+  width: 80%;
   padding: 1rem 3rem;
   border-radius: 10px;
-  margin: 2rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,12 +594,17 @@ section.hero .right img {
           justify-content: space-between;
 }
 
+.shorted-links .query {
+  max-width: 50%;
+}
+
 .shorted-links .link {
-  width: 80%;
+  color: #2bd1d1;
+  text-decoration: underline;
 }
 
 .shorted-links .copy {
-  width: 5rem;
+  width: 6rem;
 }
 
 .bg {

@@ -810,9 +810,10 @@ footer .ft-container .links nav {
   margin-top: 2rem;
 }
 
-footer h4 {
+footer li.heading {
   color: white;
   margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
 footer img.white {

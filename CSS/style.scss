@@ -128,8 +128,10 @@ section.hero {
   }
 
   & .invalid-input{
-    border: 2px solid hsl(0, 87%, 67%);
-    color:hsl(0, 87%, 67%) ;
+    border: 2px solid hsl(0, 87%, 67%) ;
+    &::placeholder{
+      color:hsl(0, 87%, 67%)  ;
+    }
   }
   
   & .shorten {
@@ -142,7 +144,7 @@ section.hero {
   }
   & .valid-link{
     color: hsl(0, 87%, 67%);
-    font-size: 0.8rem;
+    font-size: 1rem;
     position: absolute;
     top: 95px;
     
@@ -156,6 +158,27 @@ section.hero {
   }
 }
 
+.dot {
+  margin:20px auto;
+  color:$cyan;
+  width:90px;
+  height:45px;
+  --d:radial-gradient(farthest-side,currentColor 90%,#0000);
+  background:var(--d),var(--d),var(--d),var(--d);
+  background-size:20px 20px;
+  background-repeat:no-repeat;
+  animation: m 1s infinite;
+  position: relative;
+  top: -5%;
+  display: none;
+}
+
+@keyframes m {
+  0%  {background-position:calc(0*100%/3) 50%, calc(1*100%/3) 50% , calc(2*100%/3) 50%, calc(3*100%/3) 50% }
+  33% {background-position:calc(0*100%/3) 0  , calc(1*100%/3) 100%, calc(2*100%/3) 0  , calc(3*100%/3) 100%}
+  66% {background-position:calc(1*100%/3) 0  , calc(0*100%/3) 100%, calc(3*100%/3) 0  , calc(2*100%/3) 100%}
+  100%{background-position:calc(1*100%/3) 50%, calc(0*100%/3) 50% , calc(3*100%/3) 50%, calc(2*100%/3) 50% }
+}
 .shorted-links{
   position: relative;
   height: auto;

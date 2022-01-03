@@ -11,6 +11,7 @@ hamburger.addEventListener('click',()=>{
 const shortUrl=document.querySelector('#shortLink');
 const invalid=document.querySelector('.valid-link');
 const shortBtn=document.querySelector('.shorten');
+
 shortBtn.addEventListener('click',()=>{
 const query=shortUrl.value;
 
@@ -30,12 +31,13 @@ else{
 });
 
 const fetchApi= async(query)=>{
-
+const loader=document.querySelector(".dot");
+loader.style.display="block";
 const response= await fetch('https://api.shrtco.de/v2/shorten?url='+query);
 const data= await response.json();
 
 const finalLink=data.result.short_link;
-
+loader.style.display="none";
 showResults(finalLink,query);
 shortUrl.value='';
 }

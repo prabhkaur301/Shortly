@@ -169,25 +169,34 @@ section.hero {
   & .short-block{
     background-color: white;
     margin: 0.5rem auto;
-    height: 100px;
+    height:auto;
+    max-height: fit-content;
     width: 80%;
     padding: 1rem 3rem;
     border-radius: 10px;
     display: flex;
+    flex-wrap:wrap;
     align-items: center;
     justify-content: space-between;
   }
   & .query{
-    max-width: 50%;
+    width: 40%;
+    font-size: 12px;
+    word-wrap: break-word;
+    flex: 50%;
+   
   }
   & .link{
     color: $cyan;
+    margin-left: 2.5rem;
+    flex: 30%;
     text-decoration: underline;
 
   }
   
   & .copy{
-    width:6rem ;
+     width:6rem ;
+     flex: 10%;
   }
 }
 .bg {

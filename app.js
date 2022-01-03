@@ -17,7 +17,7 @@ const query=shortUrl.value;
 if(query===""){
 shortUrl.classList.toggle('invalid-input');
 invalid.innerHTML="** Please add a link **";
-invalid.classList.toggle('invalid');
+invalid.classList.add('invalid');
 
 }
 else{
@@ -25,7 +25,7 @@ else{
     shortUrl.classList.remove('invalid-input');
     fetchApi(query);
     
-    shortUrl.value='';
+    
 }
 });
 
@@ -37,6 +37,7 @@ const data= await response.json();
 const finalLink=data.result.short_link;
 
 showResults(finalLink,query);
+shortUrl.value='';
 }
 
 const showResults= (finalLink,query)=>{

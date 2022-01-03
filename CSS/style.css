@@ -579,13 +579,18 @@ section.hero .right img {
 .shorted-links .short-block {
   background-color: white;
   margin: 0.5rem auto;
-  height: 100px;
+  height: auto;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   width: 80%;
   padding: 1rem 3rem;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -595,16 +600,28 @@ section.hero .right img {
 }
 
 .shorted-links .query {
-  max-width: 50%;
+  width: 40%;
+  font-size: 12px;
+  word-wrap: break-word;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
 }
 
 .shorted-links .link {
   color: #2bd1d1;
+  margin-left: 2.5rem;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
   text-decoration: underline;
 }
 
 .shorted-links .copy {
   width: 6rem;
+  -webkit-box-flex: 10%;
+      -ms-flex: 10%;
+          flex: 10%;
 }
 
 .bg {

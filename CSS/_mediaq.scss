@@ -1,14 +1,19 @@
 @media screen and (max-width: 1000px) {
   html {
     font-size: 15px;
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 880px) {
-  .sec-2 {
-    & .card-3::after {
-      border: none !important;
-    }
+  html{
+    font-size: 15px;
   }
+ 
+  
+  .line{
+    display: none;
+  }
+  
 }
 @media screen and (max-width: 780px) {
   html {
@@ -139,9 +144,10 @@
     }
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   html {
     font-size: 12px;
+    overflow-x: hidden;
   }
   h1,
   h2,
@@ -180,7 +186,8 @@
     }
 
     & .right {
-      width: 90%;
+      width: 95%;
+      
     }
   }
 

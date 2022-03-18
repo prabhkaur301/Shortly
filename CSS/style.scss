@@ -83,11 +83,11 @@ section.hero {
   }
   & .right {
     flex: 40%;
+    position: relative;
+    right: 0%;
+   
 
-    & img {
-      width: 130%;
-      margin-right: 3em;
-    }
+    
   }
 }
 

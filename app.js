@@ -30,6 +30,9 @@ else{
 }
 });
 
+
+
+
 const fetchApi= async(query)=>{
 const loader=document.querySelector(".dot");
 loader.style.display="block";

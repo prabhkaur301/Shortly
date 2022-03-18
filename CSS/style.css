@@ -118,8 +118,11 @@ body .pr {
 }
 
 @media screen and (max-width: 880px) {
-  .sec-2 .card-3::after {
-    border: none !important;
+  html {
+    font-size: 15px;
+  }
+  .line {
+    display: none;
   }
 }
 
@@ -273,9 +276,10 @@ body .pr {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   html {
     font-size: 12px;
+    overflow-x: hidden;
   }
   h1,
   h2,
@@ -325,7 +329,7 @@ body .pr {
     width: 90%;
   }
   section.hero .right {
-    width: 90%;
+    width: 95%;
   }
   section.sec-2 {
     margin: 4rem 0;
@@ -484,11 +488,8 @@ section.hero .right {
   -webkit-box-flex: 40%;
       -ms-flex: 40%;
           flex: 40%;
-}
-
-section.hero .right img {
-  width: 130%;
-  margin-right: 3em;
+  position: relative;
+  right: 0%;
 }
 
 .shortenlink {
